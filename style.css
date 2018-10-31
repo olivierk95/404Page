@@ -1,0 +1,103 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#background {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(mondeSansFin.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	height: 100%;
+}
+
+.title {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.center {
+	grid-column: 2;
+	grid-row: 4;
+}
+
+.foot {
+	grid-column: 2;
+	grid-row: 5;
+	margin: 0 auto;
+	margin-top: 2vh;
+}
+
+h1 {
+	margin:0;
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	color: rgba(255,255,255,0.8);
+	font-size: 10vw;
+}
+
+h2 {
+	font-family: 'Vollkorn', serif;
+	text-align: center;
+	color: rgb(255,255,255);
+	margin: 0;
+}
+
+p {
+	font-family: 'Vollkorn', serif;
+	text-align: center;
+	color: rgb(255,255,255);
+	margin: 0;
+}
+
+a {
+	font-family: 'Vollkorn', serif;
+	color: #0C1B4D;
+	text-align: center;
+	padding: 0.5vh 7vw 0.5vh 7vw;
+	font-size: 3vh;
+}
+
+a:link {
+	background-color: rgba(255,255,255,0.6);
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: rgba(17,27,77,0.6);
+	color:rgb(255,255,255);
+}
+
+#monCercle {
+	background-color: rgba(17,27,77,0.6);
+	border-radius: 100%;
+	width: 0.5vw;
+	height: 0.5vw;
+	position: relative;
+	animation-name: myfirst;
+	animation-duration: 3s;
+	animation-delay: 5s;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes myfirst {
+	0% {left:0% ; top:0%;}
+	25% {left:100% ; top:0px;}
+	50% {left:100% ; top:6vh;}
+	75% {left:0% ; top:6vh;}
+	100% {left:0% ; top:0%;}
+}
+
+
+
+
+
